@@ -25,8 +25,45 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- MDB -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Regular MDB theme -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  
+  <!-- MDB -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+    ></script>
+
+  <!-- preview image hover link -->
+  <!-- <link href="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.css" rel="stylesheet">  -->
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- MiniPreview stuff here -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <link href="./jquery.minipreview.css" rel="stylesheet">
+  <script src="./jquery.minipreview.js"></script>
+  <script type="text/javascript">
+    $(function() {
+                $('#p1 a').miniPreview({ prefetch: 'pageload' });
+                $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+                $('#p3 a').miniPreview({ prefetch: 'none' });
+            });
+  </script>
+  <script src="https://rawgit.com/shaneapen/Image-Preview-for-Links/master/image_preview_for_links.js"></script> -->
+
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -655,15 +692,32 @@
 
         <div class="section-title">
           <h2>Achievements</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p></p>
         </div>
-
-        
+      
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Top 5 SHI Innovation Challenge: UI/UX Design 2022 </a></h4>
-            <p class="description">See</p>
+            <h4 class="title"><a href="https://skilvul.com/programs/shi-innovation-challenge-uiux-design" target="_blank">Top 5 SHI Innovation Challenge: UI/UX Design 2022 </a></h4>
+            
+            <button
+              class="description"
+              id="image-on-hover"
+              type="button"
+              class="btn btn-lg btn-danger"
+              data-mdb-toggle="popover"
+              title="Image"
+              data-mdb-content="<img src='https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/campaign/shi-innovation-challenge-uiux-design-details-1664425473381.jpg' class='img-thumbnail' alt='Shi-innovation-challenge-markoding-competition'/>"
+              data-mdb-trigger="hover"
+              data-mdb-html="true"
+            >
+            Preview
+            </button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+            </svg>
+            
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bi bi-card-checklist"></i></div>
@@ -883,6 +937,10 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
 </body>
 
 </html>
