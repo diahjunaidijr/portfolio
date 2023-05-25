@@ -1204,7 +1204,7 @@ button{
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  display: inline-block;
+  display: flex;
   /* padding: auto; */
   color: #f4f6fd;
   font-size: 14px;
@@ -1216,8 +1216,16 @@ button{
   background: #040b14;
 }
 
+/* #footer .copyright {
+  text-aligns: center;
+} */
+
 #footer .copyright {
-  align-items: center;
+  padding-top: 5px;
+  /* padding-left: 10px; */
+  text-align: center;
+  font-size: 13px;
+  color: #eaebf0;
 }
 
 #footer .credits {
@@ -1250,7 +1258,8 @@ html::-webkit-scrollbar-track {
       
 html::-webkit-scrollbar-thumb {
   border-radius: 8px;
-background-image: url("https://static.thenounproject.com/png/1008525-200.png");
+  /* background-image: url("https://static.thenounproject.com/png/1008525-200.png"); */
+  background-image: url("https://static.thenounproject.com/png/724286-200.png");
   background-position:center center;
   background-repeat: no-repeat;
   background-size: 35px;
